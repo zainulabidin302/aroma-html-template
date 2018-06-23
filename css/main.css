@@ -1,0 +1,235 @@
+/* Default Syles */
+
+html, body, div, p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+
+}
+body {
+    background: #fff;
+    min-height: 100%;
+
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.light-gray {
+    color: #b3b3b3;
+}
+.dark-gray {
+    color: #2f2f2f;
+    
+}
+
+/* Containers */
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100%;
+    
+}
+
+.signup, .slide-show {
+    width: 100%;
+    border: 1px;
+}
+
+.slide-show {
+    display: none;
+    background-image: url("../images/slide-a.png") ;
+    background-size: 100% 100%;
+}
+
+.signup-inner {
+    margin: auto;
+    width: 70%;
+    min-width: 320px;
+    padding: 5%;
+}
+
+
+
+.sub-heading {
+    line-height: 1.5em; 
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+/* FORM ELEMENTS */
+
+.signup-form .input {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #bababa;
+    border-bottom: none;
+}
+
+.signup-form form .controls .input:last-child {
+    border-bottom: 1px solid #bababa;
+    
+}
+
+.signup-form .controls .input input{
+    width: 100%;
+    display: block;
+    border: none;
+    color: #000;
+}
+.signup-form .input label {
+    width: 100%;
+    display: block;
+    color: #bababa;
+}
+
+.pull-right {
+    float: right;
+}
+
+.remember-me {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.button {
+    width: 40%;
+    height: 48px;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+
+.button-black {
+    background: black;
+    color: white;
+    border: 1px solid black;
+
+}
+.button-gray {
+    background: #fff;
+    color: #2f2f2f;
+    border: #2f2f2f;
+    border: 1px solid black;
+
+}
+.logo {
+    max-width: 30px;
+    widht: 100%;
+}
+
+.terms-and-conditions {
+    margin-top: 15%;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: white;
+    margin-right: 20px;
+    letter-spacing: 0px;
+}
+/* Media Queries */
+
+.logo-container {
+    margin-bottom: 15%;
+}
+
+
+.slider-button-container {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    float: right;
+}
+
+.slider-button {
+    color: white;
+    border: 1px solid white;
+    min-height: 36px;
+    border-radius: 3px;
+    background: rgba(0,0,0,0);
+}
+
+.slider-button:hover {
+    background: #5f6f68;
+    
+}
+
+
+
+
+
+.play {
+    width: 70px;
+    height: 70px;
+    background: #ff185a;
+    position: absolute;
+    top: 70%;
+    left: 46%;
+    border-radius: 35px;
+    color :white;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 25px;
+    display: none;
+}
+
+
+@media screen and (min-width: 799px) {
+    .signup, .slide-show {
+        width: 50%;
+    }
+    .slide-show {
+        display: block;
+    }
+    .button {
+        width: 30%;
+    }
+    .sub-heading {
+        margin-bottom: 80px;
+    }
+
+    .terms-and-conditions {
+        margin-top: 15%;
+    }
+    .menu {
+        padding-top: 10px;
+    }
+    .menu ul li {
+        margin-right: 8px;
+        font-size: 14px;
+    }
+    .play {
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 1100px) {
+    .play { left: 47%;}
+    .menu {
+        padding-left: 22%;
+        padding-top: 10px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .play { left: 48%;}
+    .menu ul li {
+        margin-right: 30px;
+    }
+}
+@media screen and (min-width: 1800px) {
+    .play { left: 49%;}
+}
