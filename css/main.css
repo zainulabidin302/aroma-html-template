@@ -52,7 +52,8 @@ a {
 .slide-show {
     display: none;
     background-image: url("../images/slide-a.png") ;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center center;
 }
 
 .signup-inner {
